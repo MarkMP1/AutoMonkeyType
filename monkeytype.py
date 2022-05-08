@@ -5,8 +5,6 @@ import time
 pyautogui.FAILSAFE = False
 
 
-set
-
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 browser = webdriver.Chrome(options=options)
@@ -16,7 +14,15 @@ lol = 0
 lastword = ""
 lol100 = False
 firstTime = True
+
+
+
+
 time.sleep(3)
+
+
+
+
 while time.time() < timeToStop:
     if lol == 100:
         pageSource = browser.execute_script("return document.documentElement.outerHTML;")
